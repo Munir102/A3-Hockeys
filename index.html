@@ -3,27 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome link -->
     <title>Hockeys</title>
-    <!-- daisy ui cdn link -->
+
+    <!-- tailwind and daisy ui cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind css link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind config for customs css link -->
+
+    <!-- google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- customize color -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                 colors: {
                     clifford: '#da373d',
+                    primary_color: '##131318',
+                    secondary_color: '#FF4240',
+                    dark_2: '#FF4240',
+                    s_color: '#89898B',
                 }
                 }
             }
         }
     </script>
+    <style>
+        .google_font{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="google_font container mx-auto">
+    <header class="">
+        <!-- navigation start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dark_2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-primary_color font-bold">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="md:text-4xl md:font-extrabold text-primary_color md:my-14">Hockey<span class="text-secondary_color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal dark_2 px-1 text-xl md:gap-11">
+                        <li><a class="text-secondary_color font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <div class="hidden md:block">
+                        <i class="fas fa-search text-2xl text-s_color"></i>
+                    </div>
+                    <a class="bg-secondary_color rounded-md px-4 py-2 text-white md:text-xl md:font-bold md:px-6 md:py-4">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation end -->
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
