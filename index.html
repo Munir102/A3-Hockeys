@@ -24,10 +24,11 @@
                 extend: {
                 colors: {
                     clifford: '#da373d',
-                    primary_color: '##131318',
+                    primary_color: '#131318',
                     secondary_color: '#FF4240',
                     dark_2: '#FF4240',
                     s_color: '#89898B',
+                    bn_text: '#ffffff99',
                 }
                 }
             }
@@ -39,25 +40,25 @@
         }
     </style>
 </head>
-<body class="google_font container mx-auto">
+<body class="google_font container mx-auto px-5">
     <header class="">
         <!-- navigation start -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
+        <nav class="mt-3">
+            <div class="navbar bg-base-100 p-0">
+                <div class="navbar-start gap-5">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabindex="0" class="menu menu-sm dark_2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a class="text-primary_color font-bold">Home</a></li>
+                            <li><a class="text-secondary_color font-bold">Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="md:text-4xl md:font-extrabold text-primary_color md:my-14">Hockey<span class="text-secondary_color">’</span>s</a>
+                    <a class="text-2xl md:text-4xl font-extrabold text-primary_color md:my-14">Hockey<span class="text-secondary_color">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal dark_2 px-1 text-xl md:gap-11">
@@ -72,11 +73,53 @@
                     <div class="hidden md:block">
                         <i class="fas fa-search text-2xl text-s_color"></i>
                     </div>
-                    <a class="bg-secondary_color rounded-md px-4 py-2 text-white md:text-xl md:font-bold md:px-6 md:py-4">Get Ticket</a>
+                    <a class="bg-secondary_color rounded-md px-4 py-2 text-white text-[18px] md:text-xl md:font-bold md:px-6 md:py-4">Get Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- navigation end -->
+
+        <!-- carousel start -->
+        <section>
+            <div class="carousel w-full mt-3 md:h-[550px] rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./assets/Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./assets/Images/bn-2.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./assets/Images/bn-3.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./assets/Images/bn-3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+            <!-- banner content -->
+            <div class="flex md:justify-end my-4">
+                <div class="relative  bg-primary_color p-8 rounded-2xl space-y-4 md:-top-56 md:right-7 md:w-[502px]">
+                    <h1 class="text-white text-[18px] md:text-[24px] font-extrabold">Encounter field heroes.</h1>
+                    <p class="text-bn_text text-[14px] leading-6 md:leading-[26px] md:text-[16px]">Embracing Excellence: Unveiling the Heroes Redefining Fields. Leadership, Innovation and Champions.</p>
+                </div>
+            </div>
+        </section>
+        <!-- carousel end -->
     </header>
     <main></main>
     <footer></footer>
