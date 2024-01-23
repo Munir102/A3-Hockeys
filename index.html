@@ -136,7 +136,8 @@
             <div class="flex flex-col md:flex-row justify-center text-center gap-7 md:gap-32">
                 <!-- progress 1 -->
                 <div class="space-y-6">
-                    <div class="radial-progress text-error h-[120px] w-[120px]" style="--value:87;" role="progressbar">87%</div>
+                    <div class="radial-progress text-error h-120 w-120" style="--value:87;" role="progressbar">87%</div>
+
                     <div class="space-y-4">
                         <h1 class="text-xl font-semibold">Prayer Facility</h1>
                         <p class="text-p_text text-base font-normal">Serenity found in every <br> prayer.</p>
@@ -144,7 +145,7 @@
                 </div>
                 <!-- progress 2 -->
                 <div class="space-y-6 ">
-                    <div class="radial-progress text-success h-[120px] w-[120px]" style="--value:95;" role="progressbar">95%</div>
+                    <div class="radial-progress text-success h-120 w-120" style="--value:95;" role="progressbar">95%</div>
                     <div class="space-y-4">
                         <h1 class="text-xl font-semibold">Experienced Trainer</h1>
                         <p class="text-p_text text-base font-normal">Crafting excellence through <br> seasoned expertise.</p>
@@ -152,7 +153,7 @@
                 </div>
                 <!-- progress 3 -->
                 <div class="space-y-6">
-                    <div class="radial-progress text-warning h-[120px] w-[120px]" style="--value:87;" role="progressbar">90%</div>
+                    <div class="radial-progress text-warning h-120 w-120" style="--value:87;" role="progressbar">90%</div>
                     <div class="space-y-4">
                         <h1 class="text-xl font-semibold">Experienced Player</h1>
                         <p class="text-p_text text-base font-normal">Mastering the game with <br> seasoned prowess.</p>
@@ -160,7 +161,7 @@
                 </div>
                 <!-- progress 4 -->
                 <div class="space-y-6 ">
-                    <div class="radial-progress text-info h-[120px] w-[120px]" style="--value:87;" role="progressbar">85%</div>
+                    <div class="radial-progress text-info h-120 w-120" style="--value:87;" role="progressbar">85%</div>
                     <div class="space-y-4">
                         <h1 class="text-xl font-semibold">Training Facility</h1>
                         <p class="text-p_text text-base font-normal">Elevate your skills in our <br> cutting-edge training haven.</p>
@@ -170,11 +171,53 @@
         </section>
         <!-- progress part end -->
         <!-- program part start -->
-        <section class="flex flex-col text-center space-y-4 py-7 md:mt-24 border-dashed border-t-2 border-b-2 md:py-9">
-            <h1 class="text-primary_color text-[22px] md:text-4xl font-extrabold">Program Sections</h1>
-            <p class="text-sm md:text-base font-medium leading-[26px] text-p_text">Embark on a Journey of Growth and Mastery as You Navigate Through the Varied and Specialized Program <br>Sections Tailored for Your Success and Development.</p>
+        <section>
+            <div class="flex flex-col text-center space-y-4 py-7 md:mt-24 border-dashed border-t-2 border-b-2 md:py-9">
+                <h1 class="text-primary_color text-[22px] md:text-4xl font-extrabold">Program Sections</h1>
+                <p class="text-sm md:text-base font-medium leading-[26px] text-p_text">Embark on a Journey of Growth and Mastery as You Navigate Through the Varied and Specialized Program <br>Sections Tailored for Your Success and Development.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-12">
+                <div class="relative">
+                    <div class="bg-cover bg-center bg-no-repeat h-72 md:h-96 rounded-2xl" style="background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('./assets/Images/2.png'); background-size: cover;">
+                    </div>
+                    <div class="absolute bottom-12 md:bottom-16 space-y-4 px-8 md:px-16">
+                        <h1 class="text-white text-xl md:text-3xl font-extrabold">Junior Program</h1>
+                        <p class="text-sm md:text-base text-white leading-7">Empowering the next generation of hockey stars! Join our Junior Program and let the journey to greatness begin.</p>
+                        <button class="px-4 md:px-6 py-2 md:py-3 bg-secondary_color text-lg md:text-xl font-bold text-white rounded">Register Now! </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-cover bg-center bg-no-repeat h-72 md:h-96 rounded-2xl" style="background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('./assets/Images/3.png'); background-size: cover;">
+                    </div>
+                    <div class="absolute bottom-12 md:bottom-16 space-y-4 px-8 md:px-16">
+                        <h1 class="text-white text-xl md:text-[28px] font-extrabold">Divisional Program</h1>
+                        <p class="text-sm md:text-base text-white leading-7">Empowering the next generation of hockey stars! Join our Junior Program and let the journey to greatness begin.</p>
+                        <button class="px-4 md:px-6 py-2 md:py-3 bg-secondary_color text-lg md:text-xl font-bold text-white rounded">Register Now! </button>
+                    </div>
+                </div>
+
+                <div class="relative md:col-span-2">
+                    <div class="bg-cover bg-center bg-no-repeat h-72 md:h-[470px] rounded-2xl" style="background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('./assets/Images/4.png'); background-size: cover;">
+                    </div>                   
+                    <div class="absolute bottom-12 md:bottom-16 space-y-4 px-8 md:px-16">
+                        <h1 class="text-white text-xl md:text-[28px] font-extrabold">Professional Program</h1>
+                        <p class="text-sm md:text-base text-white leading-7">Empowering the next generation of hockey stars! Join our Junior Program and let the <br> journey to greatness begin.</p>
+                        <button class="px-4 md:px-6 py-2 md:py-3 bg-secondary_color text-lg md:text-xl font-bold text-white rounded">Register Now! </button>
+                    </div>
+                </div>
+            </div>
+            
         </section>
         <!-- program part end -->
+        <!-- new product start -->
+        <section>
+            <!-- <div class="flex flex-col text-center space-y-4 py-7 md:mt-24 border-dashed border-t-2 border-b-2 md:py-9">
+                <h1 class="text-primary_color text-[22px] md:text-4xl font-extrabold">Our New Products</h1>
+                <p class="text-sm md:text-base font-medium leading-[26px] text-p_text px-72">Embark on a journey of innovation and style with our latest collection of new products. Carefully crafted to meet the evolving needs of our customers, each item embodies quality, functionality, and cutting-edge design.</p>
+            </div> -->
+        </section>
+        <!-- new product end -->
     </main>
     <footer></footer>
 </body>
